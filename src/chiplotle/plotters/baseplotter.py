@@ -75,7 +75,8 @@ class _BasePlotter(object):
                 else:
                     print(c, type(c))
                 result.append(c)
-            data = b"".join(result)
+            data = "".join(result)
+            data = bytes(data)
         else:
             raise TypeError("Unknown type {}, can't write to serial".format(type(data)))
         self._write_bytes_to_port(data)
