@@ -9,7 +9,6 @@ from future import standard_library
 standard_library.install_aliases()
 from chiplotle.geometry.core.polygon import Polygon
 import math
-from fractions import gcd
 
 
 def star_crisscross(
@@ -61,9 +60,9 @@ def star_crisscross(
         if jump_size is None:
             jump_size = int(num_points / 2)
 
-        if gcd(num_points, jump_size) != 1:
+        if math.gcd(num_points, jump_size) != 1:
             if find_valid_jump_size:
-                while gcd(num_points, jump_size) != 1:
+                while math.gcd(num_points, jump_size) != 1:
                     jump_size -= 1
             else:
                 invalid_star = [[half_width, half_height], [half_width, half_height]]
