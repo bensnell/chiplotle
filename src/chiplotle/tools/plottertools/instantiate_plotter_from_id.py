@@ -15,7 +15,7 @@ def instantiate_plotter_from_id(serial, id):
     - `id` is a string of the plotter ID.
     """
     ## massage id...
-    id = id.replace("-", "").strip(b"\r")
+    id = id.replace(b"-", b"").strip(b"\r")
     ## find a plotter within existing plotters that matches ID
     ## and instantiate.
     for plt_str in dir(plotters):
