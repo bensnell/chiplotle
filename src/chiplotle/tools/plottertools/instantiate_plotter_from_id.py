@@ -19,6 +19,6 @@ def instantiate_plotter_from_id(serial, id):
     ## find a plotter within existing plotters that matches ID
     ## and instantiate.
     for plt_str in dir(plotters):
-        if id in plt_str:
+        if str(id) in plt_str:
             plotter = getattr(plotters, plt_str)(serial)
             return plotter
