@@ -37,7 +37,7 @@ def what_plotter_in_port(port, wait_time=10):
     t = time.time()
     while time.time() - t < wait_time:
         if ser.inWaiting() > 0:
-            id = ser.readline().strip("\r")
+            id = ser.readline().strip(b"\r")
 
             ## if not just a repeater...
             if id != "OI;":
