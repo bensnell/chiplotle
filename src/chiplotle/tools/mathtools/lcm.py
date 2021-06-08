@@ -5,7 +5,8 @@ from __future__ import absolute_import
 from future import standard_library
 
 standard_library.install_aliases()
-from fractions import gcd
+"""REPLACED from fractions import gcd"""
+import math
 
 
 def lcm(a, b):
@@ -21,7 +22,7 @@ def lcm(a, b):
         dividend = b
         divisor = a
 
-    the_gcd = gcd(dividend, divisor)
+    the_gcd = math.gcd(dividend, divisor)
     lcm = (a * b) / the_gcd
 
     return lcm
