@@ -31,6 +31,11 @@ Chiplotle Known Plotters
 	:undoc-members:
 	:show-inheritance:
 
+.. autoclass:: chiplotle.plotters.HP7570A
+	:members:
+	:undoc-members:
+	:show-inheritance:
+
 .. autoclass:: chiplotle.plotters.HP7575A
 	:members:
 	:undoc-members:
@@ -98,6 +103,11 @@ Chiplotle Known Plotters
 	:show-inheritance:
 
 .. autoclass:: chiplotle.plotters.hp7550a
+	:members:
+	:undoc-members:
+	:show-inheritance:
+
+.. autoclass:: chiplotle.plotters.hp7570a
 	:members:
 	:undoc-members:
 	:show-inheritance:
