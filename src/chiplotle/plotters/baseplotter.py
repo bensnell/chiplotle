@@ -72,8 +72,6 @@ class _BasePlotter(object):
                 ## TODO: remove _HPGL from this list...
                 if isinstance(c, (_Shape, _HPGL)):
                     c = c.format
-                else:
-                    print(c, type(c))
                 result.append(c.encode())
             data = b"".join(result)
         else:
