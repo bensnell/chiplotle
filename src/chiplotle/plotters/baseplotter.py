@@ -74,8 +74,9 @@ class _BasePlotter(object):
                     c = c.format
                 else:
                     print(c, type(c))
-                result.append(c.encode())
-            data = b"".join(result)
+                result.append(c)
+            data = "".join(result)
+            data = bytes(data, 'utf-8')
         else:
             raise TypeError("Unknown type {}, can't write to serial".format(type(data)))
         self._write_bytes_to_port(data)

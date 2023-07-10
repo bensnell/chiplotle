@@ -7,6 +7,7 @@ from future import standard_library
 standard_library.install_aliases()
 """REPLACED from fractions import gcd"""
 import math
+from math import gcd
 
 
 def lcm(a, b):
